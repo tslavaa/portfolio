@@ -1,0 +1,658 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.menu-btn {
+	display: none;
+	position: relative;
+
+}
+/*делаю бургер (меню)*/
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+	position: absolute;
+	top: 70%;
+	width: 33px;
+	height: 4px;
+	background: #000;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+	content: '';
+	display: block;
+	transition: 0.2s;
+}
+
+span {
+	transform: translateY(14px);
+}
+
+.menu-btn span::before {
+	transform: translateY(5px);
+}
+
+.menu-btn span::after {
+	transform: translateY(13px);
+}
+
+.menu-btn__active span {
+	height: 0;
+}
+
+.menu-btn__active span:before {
+	transform: rotate(45deg);
+	background: #828282;
+}
+
+.menu-btn__active span:after {
+	transform: rotate(-45deg);
+	background: #828282;
+}
+/*закончил*/
+.menu-block {
+
+}
+
+.nav {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.nav-menu {
+	list-style-type: none;
+}
+
+.nav-menu__btn {
+	color: #828282;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.nav-menu:hover {
+	opacity: 0.7;
+}
+
+.nav-menu__btn:hover {
+	color: #070707;
+}
+
+.sidebar-menu__link:hover {
+	color: #070707;
+}
+
+.me {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 47.3392px;
+	line-height: 59px;
+	color: #070707;
+}
+
+.about {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: medium;
+}
+
+.language {
+	text-transform: uppercase;
+	transform: rotate(270deg);
+	font-size: 16px;
+	line-height: 20px;
+	color: #828282;
+}
+
+.english {
+		color: #000;
+	}
+
+.photo {
+	margin-bottom: 105px;
+	max-width: 100%;
+}
+
+.profile {
+	display: none;
+}
+
+.about-me {
+	background: #F6F6F6;
+}
+
+.about-me__items {
+	padding-top: 120px;
+	padding-bottom: 107px;
+}
+
+.title {
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	color: #070707;
+	margin-bottom: 30px;
+}
+
+.title-text {
+	color: #070707;
+}
+
+.myself {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.works {
+	max-width: 100%;
+}
+
+.work {
+	margin-top: 91px;
+	text-align: center;
+	font-size: 34px;
+	line-height: 42px;
+	font-weight: bold;
+	margin-bottom: 69px;
+}
+
+.work-text {
+	text-align: center;
+	font-weight: medium;
+	font-size: 18px;
+	line-height: 22px;
+	color: #070707;
+	margin-bottom: 84px;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 180px;
+}
+/*начал работу с svg картиночками*/
+.icon {
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+
+.program {
+	display: flex;
+	text-align: center;
+}
+
+.icon-ps {
+	margin-right: 171px;
+	background: #12102a;
+}
+
+.icon-ai {
+	margin-right: 171px;
+	background: #231207;
+}
+
+.icon-ae {
+	margin-right: 171px;
+	background: #1d0a35;
+}
+
+.figma {
+	margin-right: 171px;
+}
+
+.ps {
+	margin-left: 6px;
+}
+
+.ai {
+	margin-left: 12px;
+}
+
+.ae {
+	margin-left: 3px;
+}
+
+.fig {
+	margin-left: 27px;
+}
+
+.stars {
+	margin-bottom: 110px;
+}
+/*закончил*/
+.portfolio {
+	background: #F6F6F6;
+
+}
+
+.portfolio-title {
+	padding-top: 113px;
+	padding-bottom: 47px;
+}
+
+.works {
+	padding-bottom: 45px;
+}
+
+.pages {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-decoration-line: underline;
+	padding-bottom: 100px;
+}
+
+.page {
+	color: #070707;
+}
+
+
+.reebok {
+	padding-top: 100px;
+}
+
+.braun {
+	padding-top: 100px;
+}
+
+.footer {
+	margin-top: 114px;
+	text-align: center;
+}
+
+.footer-text {
+	font-weight: medium;
+	font-size: 18px;
+	line-height: 22px;
+	color: #070707;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.button {
+	text-align: center;
+	color: #fff;
+	background: #000;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	box-shadow: 10px 5px 5px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 85px;
+}
+
+.post-button {
+	background: transparent;
+	border: none;
+	color: #8c8c8c;
+	display: flex;
+	align-items: center;
+	margin-right: 19px;
+	cursor: pointer;
+}
+/*снова svg*/
+.behance {
+	margin-right: 62px;
+}
+
+.inst {
+	margin-right: 62px;
+}
+
+.link {
+	margin-right: 62px;
+}
+
+.links-text {
+	font-size: 14px;
+	font-weight: medium;
+	line-height: 17px;
+	color: #828282;
+	margin-bottom: 123px;
+	margin-top: 45px;
+}
+/*скрыл сайд бар для десктопов*/
+.sidebar {
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	/*от 0 до 1200*/
+	.pages {
+		width: 100%;
+	}
+
+	.cards {
+		width: 100%;
+		margin: 0 auto;
+	}
+} 
+
+@media screen and (max-width: 1024px) {
+	/*для маленьких экранов от 0 до 1024*/
+	.pages {
+		width: 90%;
+	}
+
+	.cards {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+
+	.card {
+		margin: 0px;
+		text-align: center;
+	}
+
+	.icon {
+		
+		margin: 0;
+	}
+
+	.stars {
+		height: 26px;
+		margin-top: 40px;
+		margin-bottom: 81px;
+	}
+	
+	.portfolio {
+		height: 90%;
+	}
+
+
+	.works {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+		
+	}
+
+	.page {
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		margin-left: 49px;
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 85px;
+	}
+
+	.post-button {
+		background: transparent;
+		border: none;
+		color: #8c8c8c;
+		display: flex;
+		align-items: center;
+		margin-right: 19px;
+		cursor: pointer;
+	}
+
+	.behance {
+		margin-right: 62px;
+	}
+
+	.inst {
+		margin-right: 62px;
+	}
+
+	.link {
+		margin-right: 62px;
+	}
+} 
+
+@media screen and (max-width: 768px) {
+	/*от 0 до 768*/
+	.pages {
+		width: 100%;
+	}
+	
+	.cards {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.card {
+		margin: 0px;
+		text-align: center;
+	}
+
+	.icon {
+		
+		margin: 0;
+	}
+
+	.stars {
+		height: 26px;
+		margin-top: 40px;
+		margin-bottom: 81px;
+	}
+	
+	.portfolio {
+		height: 90%;
+	}
+
+
+	.works {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+		
+	}
+
+	.page {
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		margin-left: 49px;
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 85px;
+	}
+
+	.post-button {
+		background: transparent;
+		border: none;
+		color: #8c8c8c;
+		display: flex;
+		align-items: center;
+		margin-right: 19px;
+		cursor: pointer;
+	}
+
+	.behance {
+		margin-right: 62px;
+	}
+
+	.inst {
+		margin-right: 62px;
+	}
+
+	.link {
+		margin-right: 62px;
+	}
+
+
+} 
+
+@media screen and (max-width: 384px) {
+/*от 0 до 384*/
+	.menu-btn {
+		display: block;
+		margin-left: 312px;
+		margin-top: 30px;
+	}
+
+	header {
+		margin-right: 30px;
+	}
+
+	.photo {
+		display: none;
+	}
+
+	.me {
+		margin-right: 29px;
+		margin-left: 29px;
+		display: block;
+		margin-bottom: 37px;
+	}
+
+	.profile {
+		margin-right: 29px;
+		margin-left: 29px;
+		margin-bottom: 83px;
+	}
+
+	h4 {
+		display: none;
+	}
+
+	hr {
+		border: none;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.nav-menu {
+		margin-left: 26px;
+		margin-bottom: 68px;
+	}
+
+	.header-burger:before,
+	.header-burger:after {
+		content: '';
+		background: #000;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		left: 0px;
+	}
+
+	.header-burger:before {
+		top: 0;
+	}
+
+	.header-burger:after {
+		bottom: 0;
+	}
+
+	.profile {
+		max-width: 100%;
+		display: block;
+	}
+	/*показываю бургер, но с ним траблы*/
+	.sidebar {
+		display: block;
+		position: fixed;
+		z-index: 101;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		background: #fff;
+		padding: 30px;
+		transform: translateX(100%);
+		transition: transform 0.2s;
+		overflow-y: auto;
+	}
+	
+	.sidebar.visible {
+		transform: translateX(0);
+	}
+
+	.sidebar-menu__item {
+		list-style-type: none;
+		margin-bottom: 68px;
+	}
+
+	.sidebar-menu__link {
+		color: #828282;
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 42px;
+	}
+
+	.sidebar-language {
+		display: block;
+		transform: rotate(90deg);
+		text-transform: uppercase;
+		color: #828282;
+		margin-left: 170px;
+		font-size: 34px;
+		line-height: 42px;
+		font-weight: bold;
+	}
+
+	.english {
+		color: #000;
+	}
+}
+

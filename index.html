@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Portfolio</title>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<!-- сделал бокс -->
+				<div class="menu-block">
+					<nav class="nav">
+						<ul class="menu">
+							<li class="nav-menu"><a href="#home" class="nav-menu__btn">Home</a></li>
+							<li class="nav-menu"><a href="#about-me" class="nav-menu__btn">About me</a></li>
+							<li class="nav-menu"><a href="#skills" class="nav-menu__btn">Skills</a></li>
+							<li class="nav-menu"><a href="#portfolio" class="nav-menu__btn">Portfolio</a></li>
+							<li class="nav-menu"><a href="#footer" class="nav-menu__btn">Contacts</a></li>
+						</ul>
+					</nav>
+					<!-- навигация для десктопов -->
+				<hr />
+					<a href="#" class="menu-btn" id="menu-toggle">
+						<span class="test"></span>
+					</a>
+						<aside class="sidebar" id="sidebar">
+							<nav class="sidebar-nav">
+								<ul class="sidebar-menu">
+									<li class="sidebar-menu__item">
+										<a href="#" id="#home" class="sidebar-menu__link">Home</a>
+								    </li>
+									<li class="sidebar-menu__item">
+										<a href="#" id="#about-me" class="sidebar-menu__link">About me</a>
+								    </li>
+									<li class="sidebar-menu__item">
+										<a href="#" id="#skills" class="sidebar-menu__link">Skills</a>
+								    </li>
+									<li class="sidebar-menu__item">
+										<a href="#" id="#portfolio" class="sidebar-menu__link">Portfolio</a>
+								    </li>
+									<li class="sidebar-menu__item">
+										<a href="#" id="#footer" class="sidebar-menu__link">Contacts</a>
+								    </li>
+								</ul>
+							</nav>
+							<h4 class="sidebar-language">Ru <span class="english"> | Eng</h4> </span>
+						</aside>
+						<!-- навигация для мобилок -->
+				</div>
+				<div class="me" id="home">
+					<h1 class="name">Denis <br> Novik</h1>
+					<p class="about">UX | UI designer <br> 24 years old, Minsk</p>
+					<h4 class="language">Ru <span class="english"> | Eng </h4> </span>
+				</div>
+				<img src="img/photo.jpg" alt="Photo" class="photo">
+				<img src="img/profile.jpg" alt="Photo" class="profile">
+		</div>
+	</header>
+	<section class="about-me" id="about-me">
+		<div class="container">
+			<div class="about-me__items">
+			    <h2 class="title">
+				   About me
+			    </h2>
+			    <p class="title-text">
+			    	<div class="myself">Hi, I'm Denis – UX/UI designer from Minsk. <br>  I'm interested in design and everything connected with it. </div>
+			    </p>
+			    <p class="title-text">
+			    	<div class="myself">I'm studying at courses "Web and mobile design <br>interfaces" in IT-Academy.</div>
+			    </p>
+			    <p class="title-text">
+			    	<div class="myself">Ready to implement excellent projects <br>with wonderful people.</div>
+			    </p>
+			</div>
+		</div>
+	</section>
+	<section class="skills" id="skills">
+		<!-- секция с svg картинками через XML -->
+		<div class="container">
+			<h2 class="work">Skills</h2>
+			<p class="work-text">I work in such programs as</p>
+		</div>
+		<div class="cards">
+			<div class="card">
+				<svg width="89" height="89" class="icon icon-ps">
+	 				 <use xlink:href="img/icons.svg#ps"></use>
+				</svg>
+				<div class="program ps">Adobe <br>Photoshop</div>
+				<svg width="100" height="100" class="icon stars">
+	 				<use xlink:href="img/icons.svg#stars1"></use>
+				</svg>
+			</div>
+			<div class="card">
+				<svg width="89" height="89" class="icon icon-ai">
+	 				 <use xlink:href="img/icons.svg#ai"></use>
+				</svg>
+				<div class="program ai">Adobe <br>Illustrator</div>
+				<svg width="100" height="100" class="icon stars">
+	 				<use xlink:href="img/icons.svg#stars"></use>
+				</svg>
+			</div>
+			<div class="card">
+				<svg width="89" height="89" class="icon icon-ae">
+	 				 <use xlink:href="img/icons.svg#ae"></use>
+				</svg>
+				<div class="program ae">Adobe <br>After Effects</div>
+				<svg width="100" height="100" class="icon stars">
+	 				<use xlink:href="img/icons.svg#stars1"></use>
+				</svg>
+			</div>
+			<div class="card">
+				<svg width="89" height="89" class="icon figma">
+	 				 <use xlink:href="img/icons.svg#figma"></use>
+				</svg>
+				<div class="program fig">Figma</div>
+				<svg width="100" height="100" class="icon stars">
+	 				<use xlink:href="img/icons.svg#stars1"></use>
+				</svg>
+			</div>
+		</div>	
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<h2 class="title portfolio-title">Portfolio</h2>
+			<div class="pages">
+				<img src="img/store.jpg" alt="Store" class="works">
+				<a href="#" class="page store">Online fashion store - Homepage</a>
+				<img src="img/reebok.jpg" alt="Store" class="works reebok">
+				<a href="#" class="page">Reebok Store - Concept</a>
+				<img src="img/braun.jpg" alt="Store" class="works braun">
+				<a href="#" class="page">Braun Landing Page - Concept</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<h2 class="title">
+			Contacts
+		</h2>
+		<p class="footer-text">
+			Want to know more or just chat? <br>You are welcome!
+		</p>
+		<a href="#" class="button">Send message</a>
+		<div class="links">
+		<!-- <button class="icons-links"> -->
+			<svg class="icon link" width="40" height="40">
+	  			<use xlink:href="img/icons.svg#link"></use>
+			</svg>
+		<!-- </button> -->
+		<!-- <button class="icons-links"> -->
+			<svg class="icon inst" width="40" height="40">
+	 			<use xlink:href="img/icons.svg#inst"></use>
+			</svg>
+		<!-- </button> -->
+		<!-- <button class="icons-links"> -->
+			<svg class="icon behance" width="40" height="40">
+			 	<use xlink:href="img/icons.svg#behance"></use>
+			</svg>
+		<!-- </button> -->
+		<!-- <button class="icons-links"> -->
+			<svg class="icon vector" width="40" height="40">
+			  	<use xlink:href="img/icons.svg#Vector"></use>
+			</svg>
+		<!-- </button> -->
+		</div>
+		<p class="links-text">Like me on <br>LinkedIn, Instagram, Behance, Dribble</p>
+	</footer>
+	
+</div>	
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
